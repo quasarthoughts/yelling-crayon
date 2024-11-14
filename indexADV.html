@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Lawn Mowing Business</title>
+    <link rel="stylesheet" href="advanced-lawn-mowing-styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Your Lawn Mowing Business</h1>
+            <p>Making Your Lawn Look Its Best, Every Time</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Professional Lawn Mowing Services</h2>
+            <p>Keep your lawn pristine with our reliable and affordable services.</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="mowing-icon.png" alt="Mowing Icon">
+                    <h3>Regular Mowing</h3>
+                    <p>Maintain a tidy lawn with our scheduled mowing services.</p>
+                </div>
+                <div class="service-card">
+                    <img src="edging-icon.png" alt="Edging Icon">
+                    <h3>Edging and Trimming</h3>
+                    <p>Crisp edges around sidewalks, driveways, and flower beds.</p>
+                </div>
+                <div class="service-card">
+                    <img src="cleanup-icon.png" alt="Cleanup Icon">
+                    <h3>Seasonal Cleanup</h3>
+                    <p>Clear leaves, debris, and prepare your lawn for each season.</p>
+                </div>
+                <div class="service-card">
+                    <img src="fertilize-icon.png" alt="Fertilization Icon">
+                    <h3>Fertilization</h3>
+                    <p>Boost your lawn’s growth with eco-friendly fertilization options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="before.jpg" alt="Before - Lawn" onclick="openLightbox(this)">
+                <img src="after.jpg" alt="After - Lawn" onclick="openLightbox(this)">
+                <img src="before2.jpg" alt="Before - Lawn" onclick="openLightbox(this)">
+                <img src="after2.jpg" alt="After - Lawn" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a family-owned lawn care business dedicated to providing quality services that leave your lawn
+                looking flawless.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <p>"Excellent service! My lawn has never looked better."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>- Jane D.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Highly professional and very affordable!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>- John S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Lawn Mowing Business. All rights reserved.</p>
+            <p>123 Green Street, Your City</p>
+            <p>Phone: (555) 987-6543</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="">
+    </div>
+
+</body>
+
+</html>
